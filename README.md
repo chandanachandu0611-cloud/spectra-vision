@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Spectra Vision 👁️⚡
+> **Intelligent Image & Document Parser** — An optical multimodal AI workspace engineered with Next.js and Google Gemini.
 
-## Getting Started
+[![Live Demo](https://img.shields.io/badge/Live_Demo-spectra--vision--puce.vercel.app-000000?style=for-the-badge&logo=vercel)](https://spectra-vision-puce.vercel.app)
+[![Next.js](https://img.shields.io/badge/Next.js_15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![Google Gemini](https://img.shields.io/badge/Google_Gemini_API-4285F4?style=for-the-badge&logo=google)](https://ai.google.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 
-First, run the development server:
+---
 
+## 🌟 Overview
+
+**Spectra Vision** is a specialized multimodal visual analysis workspace designed to parse, transcribe, and synthesize complex real-world visual inputs with speed and high precision. 
+
+Built with Next.js and the official `@google/genai` SDK, it supports everything from handwritten notes and formal administrative letters to technical diagrams, schematics, and organizational logos.
+
+🔗 **Live Deployment:** [spectra-vision-puce.vercel.app](https://spectra-vision-puce.vercel.app)
+
+---
+
+## ✨ Key Features
+
+- **🔍 Multimodal Document & Vision Parsing:** Powered by the Google Gemini API to accurately transcribe handwritten letters, identify logos, extract tabular data, and summarize visual concepts.
+- **⚡ Client-Side Canvas Compression:** High-resolution user uploads are automatically resized and compressed on an in-memory HTML5 Canvas before dispatch, preventing upload latency and payload limits.
+- **🏷️ Content-Aware Session Titling:** AI automatically generates concise, descriptive 3–4 word titles based on what is detected inside the image (e.g., *"Student Contact Information Sheet"*, *"IEEE Region 10 Logo"*).
+- **🗂️ Searchable Query History:** Persistent browser session storage with a quick-filter search bar to navigate, revisit, and inspect previous visual queries.
+- **📋 One-Click Markdown Copy:** Formatted responses with structured headers and bullet points can be copied directly to your clipboard with a single click.
+- **🌐 Optical Reticle Interface:** Clean, SaaS-grade light UI with technical grid lines, viewfinder focus animations, and pulsing optical sweeps.
+
+---
+
+## 🛠️ Architecture & Tech Stack
+
+| Component | Technology | Description |
+| :--- | :--- | :--- |
+| **Framework** | Next.js (App Router, React 19) | Fast server-side routing & optimized client bundle |
+| **AI SDK** | Google GenAI SDK (`@google/genai`) | Low-latency inference via Gemini Flash |
+| **Styling** | Tailwind CSS | Modern SaaS-grade optical UI & responsive layout |
+| **Markdown** | `react-markdown` | Rich formatted output for analysis & transcriptions |
+| **Hosting** | Vercel | Automatic CI/CD serverless edge deployments |
+
+---
+
+## 🚀 Getting Started Locally
+
+### Prerequisites
+- Node.js 18+ installed on your machine
+- A Google Gemini API Key from [Google AI Studio](https://aistudio.google.com/)
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone [https://github.com/Chandanachandu0611-cloud/spectra-vision.git](https://github.com/Chandanachandu0611-cloud/spectra-vision.git)
+cd spectra-vision
